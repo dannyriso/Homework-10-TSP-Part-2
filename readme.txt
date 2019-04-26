@@ -49,4 +49,4 @@ Chromosomes fall out of scope, the destructor deallocates their memory.
 
 ---
 As shown in "comparison.gif", the genetic algorithm did produce a more efficient path than the randomized, but not
-to the extent desired.
+to the extent desired. This is likely due to premature convergence, though the cause of it was unclear.
