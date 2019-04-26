@@ -64,7 +64,7 @@ std::pair<Chromosome*, Chromosome*> Chromosome::recombine(const Chromosome* othe
 	assert(child1->is_valid());
 
 	auto child2 = other->create_crossover_child(this, other, b, e);
-	while(child2 == this || child2 == other) {
+	while(child2 == this || child2 == other || child2 == child1) {
 		child2 = other->create_crossover_child(this, other, b, e);
 	}
 	assert(child2->is_valid());
